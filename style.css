@@ -1,12 +1,24 @@
-
 body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    background-color: #cdd5d4;
+    background-color: #CDD5D4;
     margin: 0;
-    padding: 0;
+    padding: 0; }
+
+.p {
+
+
+    text-decoration: none;
+    padding: none;
+
+}
+    
+.h5 {
+        text-decoration: none;
+        padding: none;
+    
 }
 
 header {
@@ -15,15 +27,185 @@ header {
     width: 100%;
 }
 .container {
-    position: absolute;
-    display:flex;
-    width: 90%;
-    height: 90%;
-    left: 5%;
-    top: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: auto;
+    margin: -4rem 4rem 4rem 4rem;
     max-height: 700px;
-    background-color: #c2c2c2;
-     ;
+    background-color: #C2C2C2;
+    border-radius: 3px;
+    border-color: none;
+    box-shadow: 0px 0px 5px  #8f8686;
+     
 }
 
+
+/* left hand section */ 
+
+.contacts {
+    display: grid;
+    background-color: #d4d4d4;
+    width: 1fr;
+    border-right: 1px solid hsl(0, 6%, 64%);
+    height: 700px;
+    border-bottom: 1px solid hsl(0, 6%, 64%);
+}
+
+
+.container .contacts .navbar {
+    
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(231, 231, 231);
+    grid-template-areas: "userImg icon1 icon2";
+   
+}
+
+.icon1 { 
+    grid-area: icon1; 
+    justify-self: end;
+    padding-right: 15px;
+}
+
+.userImg {
+    grid-area: userImg;
+    padding-left: 10px;
+    width: 35px;
+}
+
+.icon2 {
+    grid-area: icon2;
+    justify-self: end;
+    padding-right: 20px;
+}
+
+
+.container .msg-notifications {
+    background-color: rgb(172, 222, 255);
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-areas: "bell contacts-notifications-text";
+    align-items: center ;
+    height: 80px;
+
+
+}
+
+.bell {
+    grid-area: bell;
+    padding-left: 10px;
+    
+}
+
+.contacts-notifications-text {
+    grid-area: contacts-notifications-text;
+    padding-left: 20px;
+    
+}
+
+a:link {
+    color: grey;
+    line-height: 10px;
+    }
+
+.contacts-search {
+    background-color: rgb(214, 214, 214);
+    height: 40px;
+    align-items: center;
+}
+.contacts-search i {
+    position: absolute;
+    padding: 10px 0 10px 20px;
+
+}
+
+.contacts-search .search {
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    padding: 20px;
+}
+
+
+/* CONTACTS BODY */
+
+.contacts-body {
+    background-color: rgb(255, 255, 255);
+    height: 510px;
+
+}
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "contact-pic-container contact-name-message  contact-time"
+    ". contact-message contact-message";
+    height: 80px;
+    padding: 10px;
+    padding-top: 20px;
+   
+    
+}
+
+.contacts-body li {
+    list-style: none;
+}
+
+.contacts-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+.contact-pic-container {
+    grid-area: contact-pic-container;
+    align-self: start;
+}
+
+.contact-name-message {
+    grid-area: contact-name-message;
+    align-items: start;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.contact-message {
+    grid-area: contact-message;
+    display: inline;
+}
+
+.contact-time {
+    grid-area: contact-time;
+    justify-self: center;
+    color: grey;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.contact-pic {
+    padding-left: 15px;
+}
+
+.contact .contact-message {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-areas: "read-icon message-text";
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ 
+}
+
+.read-icon {
+    grid-area: read-icon;
+}
+
+.message-text {
+    grid-area: message-text;
+   
+    
+}
 
