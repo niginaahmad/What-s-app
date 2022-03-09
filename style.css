@@ -44,7 +44,7 @@ header {
 
 .contacts {
     display: grid;
-    background-color: #d4d4d4;
+    background-color: rgb(231, 231, 231);
     width: 1fr;
     border-right: 1px solid hsl(0, 6%, 64%);
     height: 700px;
@@ -110,24 +110,41 @@ a:link {
     line-height: 10px;
     }
 
+/* Contacts Search */
+
 .contacts-search {
-    background-color: rgb(214, 214, 214);
-    height: 40px;
-    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    padding: 5px 0px;
+    background-color: var(--search-color);
+    display: grid;
+    grid-template-columns: 2fr 10fr; 
+    grid-template-areas: "search-icon search";
+    align-content: center;
+    height: 60px;
 }
-.contacts-search i {
-    position: absolute;
-    padding: 10px 0 10px 20px;
 
+.contacts-search input {
+    padding: 15px;
+    width: 85%;
+    background-color: white;
+    border: 0.5px solid rgb(226, 226, 226);
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
 }
 
-.contacts-search .search {
-    margin: 10px;
-    width: 80px;
-    height: 30px;
-    position: absolute;
-    padding: 20px;
+.search-icon {
+    grid-area: search-icon; 
+    align-self: center;
+    padding-left: 35px;
+    color: grey;
 }
+
+.search {
+    grid-area: search;
+ 
+}
+
 
 
 /* CONTACTS BODY */
@@ -135,8 +152,9 @@ a:link {
 .contacts-body {
     background-color: rgb(255, 255, 255);
     height: 510px;
-
+    overflow-y: scroll;
 }
+
 .contact {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -161,7 +179,6 @@ a:link {
    
 }
 
-
 .contact-pic-container {
     grid-area: contact-pic-container;
     align-self: start;
@@ -180,7 +197,7 @@ a:link {
 
 .contact-time {
     grid-area: contact-time;
-    justify-self: center;
+    justify-self: left;
     color: grey;
     border-bottom: 1px solid rgb(209, 209, 209);
 }
@@ -196,7 +213,6 @@ a:link {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
- 
 }
 
 .read-icon {
@@ -204,8 +220,5 @@ a:link {
 }
 
 .message-text {
-    grid-area: message-text;
-   
-    
+    grid-area: message-text;  
 }
-
