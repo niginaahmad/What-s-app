@@ -3,13 +3,12 @@
     padding: 0;
 }
 
-
 :root {
     --body-color: #e3eceb;
     --header-color: #077e7e;
     --container-color: #FFFFFF;
     --border-color: rgb(248, 247, 241);
-    --nav-color: rgba(220, 217, 217, 0.776);
+    --nav-color: rgba(39, 10, 10, 0.776);
     --chatback-color: #f4f4f4;
     --notifications-color: rgb(153, 215, 254);
     --search-color: rgb(255, 251, 245);
@@ -30,6 +29,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 *,
 *:before *:after {
     box-sizing: border-box;
@@ -84,7 +84,6 @@ aside {
     /* overflow-y:auto; */
     padding: 10px; 
     overflow-y: scroll; 
-
 }
 /* .contacts-body li {
     list-style: none;
@@ -128,15 +127,11 @@ aside {
     margin-right: 150px;
 }
 
-.contact-info, h4
-p {
+.contact-info, h4, p {
     margin: 0;
     color: var(--black-text);
     font-size: 14px;
 }
-/* .contact-info h4 {
-    font-size: 16px;
-} */
 
 .contact-pic {
     width: 50px;
