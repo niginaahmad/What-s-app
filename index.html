@@ -8,7 +8,15 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <title>Whatapp Project</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <linka
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@500&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Whats app Project</title>
 </head>
 <body>
   <header></header>
@@ -18,9 +26,13 @@
     <aside>
       <div class="contacts">
         <nav class="navbar">
-          <div class="userImg"><img class="contact-pic"src="/images/image1.png"alt="contact-pic"></div>
-          <div class="icon1"><i class="fas fa-comment-alt"></i> </div>
-          <div class="icon2"><i class="fas fa-ellipsis-v"></i></div> 
+          <div class="user-img">
+            <img class="contact-pic" src="images/image1.jpeg" alt="contact-pic">
+          </div>
+          <div class="navbar-icons">
+            <i class="fas fa-comment-alt"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
         </nav>
              <!-- get notification -->
         <div class="msg-notifications">
@@ -36,6 +48,11 @@
             <div class="search-icon"><i class="fas fa-search"></i></div>
            <div class="search"> <input placeholder= "Search or start a new chart " value=""></div>
           </div>
+        </div>
+        <div class="contacts-search">
+          <i class="fas fa-search"></i>
+          <input type="search" placeholder="Search or start a new chart " value>
+        </div>
         <!-- CONTACTS BODY -->
         <div class="contacts-body">
             
@@ -52,8 +69,8 @@
                 </div>
               </div>
               <div class="contact-time">
-                  <p style="margin: 0; font-size: 12px;" style="color: grey;">9:44 AM</p>
-                </div>
+                <p style="margin: 0; font-size: 12px;" style="color: grey;">9:44 AM</p>
+              </div>
             </li>
           </ul>
           <ul class="contacts-list">
@@ -150,10 +167,10 @@
     <section class="chat">
       <!-- chat header -->
       <nav class="navbar">
-        <a><img class="contact-pic" src="#" alt="contact-pic"></a>
+        <a><img class="contact-pic" src="images/images8.jpeg" alt="contact-pic"></a>
         <div class="contact-info">
-          <h3 class="contact-name">Addy Holton</h3>
-          <p>last seen Tuesday at 2:38 PM</p>
+          <h3 class="contact-name">Amy Holton</h3>
+          <p>last seen yesterday at 2:38 PM</p>
         </div>
         <div class="navbar-icons">
           <i class="fas fa-paperclip"></i>
@@ -162,69 +179,119 @@
       </nav>
       <!-- chat body -->
       <section class="chat-body">
-        <div class="chat-received">
-          <p class="chatting">Hey, there!How have you been?</p>
-          <p class="chat-time">5:55 PM</p>
+        <div class="chat-grid">
+          <div class="chat-elem chat-received">
+            <p class="chat-font-color">Hey, there!How have you been?</p>
+            <p class="chat-time">5:55 PM</p>
+          </div>
+
+          <div class="chat-elem chat-send">
+            <p class="chat-font-color">Thanks, doing well! And you?</p>
+            <p class="chat-time">5:55 PM<span class="checked material-icons">done_all</span></p>
+          </div>
+
+          <div class="chat-elem chat-received">
+            <p class="chat-font-color">Hey, there!How have you been?</p>
+            <p class="chat-time">5:55 PM</span></p>
+          </div>
+
+          <div class="chat-elem chat-send">
+            <p class="chat-font-color">Thanks,doing well! And you?</p>
+            <p class="chat-time">5:55 PM<span class="checked material-icons">done_all</span></p>
+          </div>
+
+          <div class="chat-elem chat-session-time">
+            <p>02/7/2022</p>
         </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks, doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
+
+          <div class="chat-elem chat-received">
+            <p class="chat-font-color">Hey, there!How have you been?</p>
+            <p class="chat-time">5:55 PM</p>
+          </div>
+
+          <div class="chat-elem chat-send">
+            <p class="chat-font-color">Thanks,doing well! And you?</p>
+            <p class="chat-time">5:55 PM<span class="checked material-icons">done_all</span></p>
+          </div>
+
+          <div class="chat-elem chat-received">
+            <p class="chat-font-color">Hey, there!How have you been?</p>
+            <p class="chat-time">5:55 PM</p>
+          </div>
+
+          <div class="chat-elem chat-session-time">
+            <p>02/4/2022</p>
         </div>
-        <div class="chat-received">
-          <p class="chatting">Hey, there!How have you been?</p>
-          <p class="chat-time">5:55 PM</p>
+
+          <div class="chat-elem chat-send">
+            <p class="chat-font-color">Thanks,doing well! And you?</p>
+            <p class="chat-time">5:55 PM <span class="checked material-icons">done_all</span></p>
+          </div>
+
+          <div class="chat-elem chat-received">
+            <p class="chat-font-color">Hey, there!How have you been?</p>
+            <p class="chat-time">5:55 PM</p>
+          </div>
+
+          <div class="chat-elem chat-send">
+            <p class="chat-font-color">Thanks,doing well! And you?</p>
+            <p class="chat-time">5:55 PM<span class="checked material-icons">done_all</span></p>
+          </div>
+
+          <div class="chat-elem chat-received">
+            <p class="chat-font-color">Hey, there!How have you been?</p>
+            <p class="chat-time">5:55 PM</p>
+          </div>
+
+          <div class="chat-elem chat-session-time">
+            <p>02/2/2022</p>
         </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks,doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
+
+          <div class="chat-elem chat-send">
+            <p class="chat-font-color">Thanks,doing well! And you?</p>
+            <p class="chat-time">5:55 PM <span class="checked material-icons">done_all</span></p>
+          </div>
+
+          <div class="chat-elem chat-received">
+            <p class="chat-font-color">Hey, there!How have you been?</p>
+            <p class="chat-time">5:55 PM</p>
+          </div>
+
+          <div class="chat-elem chat-session-time">
+            <p>02/1/2022</p>
+         </div>
+
+          <div class="chat-elem chat-send">
+            <p class="chat-font-color">Thanks,doing well! And you?</p>
+            <p class="chat-time">5:55 PM <span class="checked material-icons">done_all</span></p>
+          </div>
+          <div class="chat-elem chat-received">
+            <p class="chat-font-color">Hey, there!How have you been?</p>
+            <p class="chat-time">5:55 PM</p>
+          </div>
+
+          <div class="chat-elem chat-session-time">
+            <p>Yesterday</p>
         </div>
-        <div class="chat-received">
-          <p class="chatting">Hey, there!How have you been?</p>
-          <p class="chat-time">5:55 PM</p>
+
+          <div class="chat-elem chat-send">
+            <p class="chat-font-color">Thanks, doing well! And you?Eaque nam iusto veritatis dignissimos ex modi,
+              repellendus reiciendis, vero molestiae facilis voluptatibus ducimus? Aperiam, soluta
+              repudiandae sed placeat quam id cupiditate.</p>
+            <p class="chat-time">5:55 PM <span class="checked material-icons">done_all</span></p>
+          </div>
         </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks, doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-received">
-          <p class="chatting">Hey, there!How have you been?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks,doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-received">
-          <p class="chatting">Hey, there!How have you been?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks,doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-received">
-          <p class="chatting">Hey, there!How have you been?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks, doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks, doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks, doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks, doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
-        </div>
-        <div class="chat-sent">
-          <p class="chatting">Thanks, doing well! And you?</p>
-          <p class="chat-time">5:55 PM</p>
+      </section>
+      <section>
+        <div class="chat-input">
+          <div class="smile-input">
+            <i class="far fa-smile"></i>
+            <input type="text" placeholder="Message" required>
+          </div>
+          <div class="input-icons">
+            <button class="btn"><i class="fas fa-paper-plane"></i> </button>
+            <i class="fas fa-microphone"></i>
+          </div>
         </div>
       </section>
     </section>
